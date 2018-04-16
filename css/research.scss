@@ -1,0 +1,35 @@
+---
+---
+
+@import "definitions";
+
+.paperlist {
+		text-align: left;
+		line-height: 1.2em;
+		li + li {
+				margin-top: 1em;
+		}
+}
+
+hr.inner {
+		color: $headfoot-color;
+		height: 1px;
+		border: 0;
+		border-top: 1px solid;
+		width: 95%;
+}
+
+// Thanks to: https://pixelflips.com/blog/anchor-links-with-a-fixed-header
+.anchor{
+  display: block;
+  height: $nav-spacer-size + 0.5em;
+  margin-top: -$nav-spacer-size - 0.5em;
+  visibility: hidden;
+}
+
+#optiperslp_paper, #matrixmethod_paper {
+		 &:target + div {
+				background-color: $paper-highlight-color;
+				/* border-radius:1em; */
+		}
+}

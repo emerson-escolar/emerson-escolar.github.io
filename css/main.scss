@@ -1,0 +1,134 @@
+---
+---
+
+@import "definitions";
+
+html {
+		font-size: 100%;
+		font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+		margin: 0, auto;
+		text-align:center;
+
+		padding-left: 10%;
+		padding-right: 10%;
+}
+
+nav, body {
+		background-color: $bg-color;
+}
+nav, footer, hr.outer {
+		color: $headfoot-color;
+}
+nav a, footer a {
+		color: $headfoot-linkcolor;
+}
+
+nav {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+
+		padding-top: $nav-padding-size;
+		padding-bottom: $nav-padding-size;
+		margin-left: 10%;
+		margin-right: 10%;
+		border-bottom:3px solid;
+}
+
+hr.outer {
+		height:1px;
+		border:0;
+		border-top:3px solid;
+}
+
+.navspacer {
+		height: $nav-spacer-size;
+		margin: auto 0;
+
+		padding-left: 10%;
+		padding-right: 10%;
+}
+
+nav ul, footer ul {
+		list-style-type: none;
+    margin: 0;
+    padding: 0;
+		font-weight: bold;
+
+		li {
+				display: inline;
+				margin: 0 0;
+				padding: 0;
+		}
+
+		li + li {
+				margin-left: 1em;
+		}
+}
+
+footer {
+    /* border-top: 1px solid #d5d5d5; */
+    /* font-size: .8em; */
+		margin-top: 2em;
+}
+
+
+#contact{
+		padding: 1em 1em;
+		margin: 0 auto;
+		width: 24em;
+		max-width: 90%;
+}
+
+#contact:target{
+		background-color:$contact-highlight-color;
+		border-radius:1em;
+}
+
+a {
+    text-decoration: none;
+		color: $main-linkcolor;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.25em;
+}
+
+h3 {
+		font-size: 1em;
+}
+
+
+section + section{
+		padding-top: 1em;
+}
+
+.blurb {
+		margin:0 auto;
+		max-width: 42em;
+		text-align: center;
+}
+
+
+.wordbox {
+		display: table;
+		margin: 0 auto;
+		max-width: 90%;
+}
+
+.textheavy {
+		text-align: left;
+}
+
+
+

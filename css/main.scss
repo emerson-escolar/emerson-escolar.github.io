@@ -5,7 +5,7 @@
 
 html {
 		font-size: 100%;
-		font-family: Helvetica, Arial, sans-serif;
+		font-family: Arial, sans-serif;
 }
 
 body {
@@ -16,9 +16,14 @@ body {
 		padding-right: 10%;
 }
 
-nav, body {
+body {
 		background-color: $bg-color;
 }
+
+nav {
+    background-color: $head-bg-color;
+}
+
 nav, footer, hr.outer {
 		color: $headfoot-color;
 }
@@ -34,8 +39,8 @@ nav {
 
 		padding-top: $nav-padding-size;
 		padding-bottom: $nav-padding-size;
-		margin-left: 10%;
-		margin-right: 10%;
+		margin-left: 0%;
+		margin-right: 0%;
 		border-bottom:3px solid;
 }
 

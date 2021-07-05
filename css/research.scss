@@ -11,6 +11,15 @@
 		}
 }
 
+.normallist {
+    text-align: left;
+    line-height: 1.2em;
+    li + li {
+        margin-top:0em;
+    }
+}
+
+
 hr.inner {
 		color: $headfoot-color;
 		height: 1px;
